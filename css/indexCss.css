@@ -1,0 +1,306 @@
+/*登录界面CSS*/
+
+.bodyHtml {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+    background-image: url("../img/steamBC.jpg");
+    background-size: cover;
+}
+
+.centerClass{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top:50%;
+    margin-top: -170px;
+    background-color: black;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 5px #0f0f0f;
+}
+
+
+.Sign{
+    position: relative;
+    width: 500px;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,0.5);
+    float: right;
+}
+
+.signHead{
+    position:relative;
+    height: 100px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    line-height: 250%;
+}
+
+.signInput{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+
+.signForm{
+    position: relative;
+    top:10px;
+}
+
+.signForm>input{
+    position: relative;
+    margin-top:30px;
+    height: 30px;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 15px;
+    ime-mode: disabled;
+}
+
+
+#identifyingCodeInput{
+    position: absolute;
+    left: 100px;
+    width: 70px;
+}
+
+.identifyingCodeImg{
+    position: relative;
+    margin-top:40px;
+    left: 200px;
+    width: 70px;
+    height: 35px;
+    background-color: #00A000;
+}
+.identifyingCodeImg>img{
+    width: 100%;
+    height: 35px;
+}
+
+.signEnd{
+    position: relative;
+    height: 100px;
+    line-height: 100px;
+}
+
+#signBtn{
+    position: relative;
+    left: 100px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00CCFF;
+}
+
+
+.signEnd>a{
+    position: relative;
+    margin-left: 140px;
+    color:white;
+    line-height: 20px;
+}
+
+
+.SignQRCode{
+    position: relative;
+    width: 500px;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,0.5);
+    float: left;
+}
+
+.QRCodeDiv{
+    position: relative;
+    top:50px;
+    left:0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background-color: #00A000;
+}
+
+.QRCodeDiv>img{
+    width: 100%;
+}
+
+.SignQRCodeHead{
+    position:relative;
+    height: 50px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    line-height: 250%;
+}
+
+/*框架CSS*/
+
+.bodyHtmlFrame{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+    background-image: url("../img/steamBC.jpg");
+    background-size: cover;
+}
+
+.frameNav{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    right: 0;
+    background-color: #cccccc;
+    z-index: 1;
+}
+
+.person{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: white;
+    float: right;
+    right: 10px;
+    line-height: 350%;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.person:hover{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: white;
+    float: right;
+    right: 10px;
+    line-height: 350%;
+    text-align: center;
+    color: lightskyblue;
+    margin-right: 5px;
+    cursor:pointer;
+    border-right-color: #00CCFF;
+    border-width: 1px;
+    box-shadow: 0 0 10px #888888;
+}
+
+.personNav{
+    top:60px;
+    position: absolute;
+    height: auto;
+    width: 60px;
+    float: right;
+    right: 5px;
+    line-height: 350%;
+    display: none;
+}
+
+.personChoice{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: white;
+    float: right;
+    right: 0;
+    line-height: 450%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.personChoice:hover{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: white;
+    float: right;
+    right: 0;
+    line-height: 450%;
+    text-align: center;
+    color: lightskyblue;
+    cursor:pointer;
+    border-right-color: #00CCFF;
+    border-width: 1px;
+    box-shadow: 0 0 10px #888888;
+}
+
+
+.bodyDiv{
+    top: 60px;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+}
+
+#hideDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 3;
+    display: none;
+}
+
+.personMessage{
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 4;
+    box-shadow: 0 0 10px 5px #0f0f0f;
+    display: none;
+}
+
+.personMessage>form{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.personMessage>form>input{
+    width: 80%;
+    margin-bottom: 10px;
+
+}
+
+.personMessage>button{
+    position: relative;
+    left: 161px;
+    top: 30px;
+    background-color: #00CCFF;
+}
+
+.messageBody{
+    position: relative;
+    min-width: 800px;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    background-color: rgba(0,0,0,0.5);;
+    margin: 0 auto;
+    opacity: 0.5;
+    top: 5%;
+}
