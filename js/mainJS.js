@@ -85,7 +85,10 @@ function signUserBtn() {
     let aa = $("#signForm").serialize();
 
     $(function () {
+<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
 
+=======
+>>>>>>> fixedBy YuFan
         $.ajax({
             url: LoginAPI(),
             type: "PATCH",
@@ -95,7 +98,10 @@ function signUserBtn() {
                 LoginUser
             ),
             success: function (res) {
+<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
                 alert(res.msg);
+=======
+>>>>>>> fixedBy YuFan
                 if (res.msg == "successful") {
                     let parm1=Account;
                     let parm2=Password;

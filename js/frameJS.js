@@ -23,7 +23,10 @@ window.onload = function () {
             success: function (res) {
                 let perosn2 = res.data;
                 $(".person").text(perosn2.userName);
+<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
 
+=======
+>>>>>>> fixedBy YuFan
             },
             error: function () {
                 console.log(false);
@@ -35,8 +38,17 @@ window.onload = function () {
 
 
     $(function () {
+<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
         $(".person").click(function () {
             $(".personNav").slideToggle(1);
+=======
+        $(".person").mouseenter(function () {
+            $(".personNav").slideDown(1);
+        });
+
+        $(".personNav ").mouseleave(function () {
+            $(".personNav").slideUp(1);
+>>>>>>> fixedBy YuFan
         })
     });
 
@@ -51,6 +63,7 @@ window.onload = function () {
                 let perosn2 = res.data;
                 $(".person").text(perosn2.userName);
                 if(res.data.userLevel == "系统管理员"){
+<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
                     $(".personNav").append(
 
                       '<div class="personChoice">' + "个人信息"+'</div>'
@@ -92,6 +105,12 @@ window.onload = function () {
                             $(".personMessage").css("display", "block");
                         }
                     });
+=======
+                    bodyAppendPersonMessage(res);       //添加系统管理员的个人信息
+                    toolNavAppend(res);
+
+
+>>>>>>> fixedBy YuFan
                 }
             },
             error: function () {
@@ -123,8 +142,11 @@ function upDateUser() {
     let passWord =  $form.eq(3).val();
     let level = $form.eq(4).val();
     let tel = $form.eq(5).val();
+<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
 
 
+=======
+>>>>>>> fixedBy YuFan
     $.ajax({
         url: "http://api.ksgin.online/User/UpdateUserPassword",
         type: "PATCH",
@@ -157,7 +179,11 @@ function upDateUser() {
         ),
         success: function (res) {
             console.log(res.msg);
+<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
 
+=======
+            alert("修改成功");
+>>>>>>> fixedBy YuFan
         },
         error: function () {
             console.log(false);
@@ -165,3 +191,95 @@ function upDateUser() {
         }
     })
 }
+<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
+=======
+
+function bodyAppendPersonMessage(res) {
+    $(".personNav").append(
+
+        '<div class="personChoice">' + "个人信息"+'</div>'
+        +'<div class="personChoice">'+"签到记录"+'</div>'
+        +'<div class="personChoice">'+"信箱"+'</div>'
+        +'<div class="personChoice">'+"系统通知"+'</div>'
+    );
+
+    $(".messageBody").append(
+        '<div class="personMessage">'
+        +'<form>' +
+        '<label>id(不可修改):</label>'+'<br/>'+'<input type="text">'+'<br/>'
+
+        + '<label>姓名(不可修改):</label>'+'<br/>'+'<input type="text" >'+'<br/>'
+        +'<label>账号(不可修改):</label>'+'<br/>'+'<input type="text">'+'<br/>'
+        +'<label>密码:</label>'+'<br/>'+'<input type="text">'+'<br/>'
+        +'<label>职位:</label>'+'<br/>'+'<input type="text">'+'<br/>'
+        +'<label>电话:</label>'+'<br/>'+'<input type="text">'+'<br/>'
+        +'<label>性别(不可修改):</label>'+'<br/>'+'<input type="text">'+'<br/>'
+        +'</form>'+
+
+        '<button onclick="upDateUser()">确定修改</button>'   +
+        '</div>'
+    );
+
+    $("input").eq(0).attr("value",res.data.userId);
+    $("input").eq(0).attr("placeholder",res.data.userId);
+    $("input").eq(1).attr("placeholder",res.data.userName);
+    $("input").eq(2).attr("placeholder",res.data.userAccount);
+    $("input").eq(3).attr("placeholder",res.data.userPassword);
+    $("input").eq(4).attr("placeholder",res.data.userLevel);
+    $("input").eq(5).attr("placeholder",res.data.userTel);
+    $("input").eq(6).attr("placeholder",res.data.userSex);
+
+    $("input").eq(0).attr("disabled",true);
+    $("input").eq(1).attr("disabled",true);
+    $("input").eq(2).attr("disabled",true);
+    $("input").eq(6).attr("disabled",true);
+    $("input").eq(4).attr("disabled",true);
+
+    $(".personChoice").eq(0).click(function () {
+        queryUsers();
+        $(".personMessage").css("display", "block");
+    });
+}
+
+function toolNavAppend(res) {
+    $(".toolNav").append(
+
+        '<div class="toolChild">' + "添加员工"+'</div>'
+        +'<div class="toolChild">'+"查询员工"+'</div>'
+        +'<div class="toolChild">'+"添加影厅"+'</div>'
+        +'<div class="toolChild">'+"删除影厅"+'</div>'
+    );
+
+    $(".toolNav").children().eq(0).css({
+        "border-top-left-radius":"10px",
+        "border-top-right-radius":"10px"
+    });
+
+    $(".toolNav").children().eq(3).css({
+       "border-bottom-left-radius":"10px",
+        "border-bottom-right-radius":"10px"
+    });
+
+
+    for(let i = 0;i<4;i++){
+        $(".messageBody").append(
+            '<div class="choiceBody">'+i+'</div>'
+        )
+    }
+
+
+    for(let i =0;i<4;i++){
+            $(".toolNav").children().eq(i).click(function () {
+                queryUsers();
+                $(".choiceBody").eq(i).css("display","block");
+            });
+
+    }
+
+}
+
+function queryUsers() {
+    $(".messageBody").children().css("display","none");
+
+}
+>>>>>>> fixedBy YuFan
