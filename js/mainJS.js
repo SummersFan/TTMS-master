@@ -85,29 +85,24 @@ function signUserBtn() {
     let aa = $("#signForm").serialize();
 
     $(function () {
-<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
 
-=======
->>>>>>> fixedBy YuFan
         $.ajax({
             url: LoginAPI(),
             type: "PATCH",
             contentType: "application/json; charset=utf-8",
             datatype: "jsonp",
+            xhrFields: { withCredentials: true },
             data: JSON.stringify(
                 LoginUser
             ),
             success: function (res) {
-<<<<<<< ac420c2ff627a312ea118d56c3938fafc1046236
-                alert(res.msg);
-=======
->>>>>>> fixedBy YuFan
                 if (res.msg == "successful") {
                     let parm1=Account;
                     let parm2=Password;
                     let myurl="html/frameHTML.html"+"?"+"account="+parm1;
                     window.location.assign(myurl);
                 } else {
+                    alert("用户名或密码错误！");
                     return false;
                 }
             },
