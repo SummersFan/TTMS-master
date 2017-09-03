@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>index</title>
     <link rel="stylesheet" href="css/indexCss.css">
-
 </head>
 <body class="bodyHtml">
 <div id="hideDiv">
@@ -12,10 +11,10 @@
 <div class="centerClass">
     <div class="SignQRCode">
         <div class="SignQRCodeHead">
-            二维码登录
+            西游电影院
         </div>
         <div class="QRCodeDiv">
-            <img src="img/QRcode.jpg">
+            <img src="img/xiyou2.jpg">
         </div>
     </div>
     <div class="Sign">
@@ -23,6 +22,7 @@
             用户登录
         </div>
         <div class="signInput">
+
             <form class="signForm">
                 <label></label>
                 <input id="signUserAccount" type="text" placeholder="请输入工作号"><br/>
@@ -30,20 +30,23 @@
                 <input  id="signUserPassword" type="password" maxlength="15" placeholder="请输入密码"><br/>
                 <label></label>
                 <input type="text" id="identifyingCodeInput" maxlength="4" placeholder="输入验证码">
+                <div class="identifyingCodeImg">
+                    <img id="verCodeImg" src="" onclick="changeVerCode()"/>
+                </div>
             </form>
-            <div class="identifyingCodeImg">
-                <img src="img/YZM1.jpg">
-            </div>
+            <!--<div class="identifyingCodeImg">-->
+                <!--<img id="verCodeImg" src="" onclick="changeVerCode()"/>-->
+            <!--</div>-->
         </div>
         <div class="signEnd">
             <button type="button" id="signBtn" onclick="signUserBtn()">登陆</button>
-            <a href="#">忘记密码</a>
         </div>
     </div>
 </div>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/mainJS.js"></script>
 <script type="text/javascript" src="API/mainAPI.js"></script>
-
+<script src="http://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 </body>
 </html>

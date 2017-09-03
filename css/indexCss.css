@@ -8,42 +8,42 @@
     height: 100%;
     min-width: 1000px;
     min-height: 600px;
-    background-image: url("../img/steamBC.jpg");
+    background-image: url("../img/bj4.jpg");
     background-size: cover;
 }
 
-.centerClass{
+.centerClass {
     position: absolute;
     height: 400px;
     width: 100%;
-    top:50%;
+    top: 50%;
     margin-top: -170px;
     background-color: black;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 10px 5px #0f0f0f;
 }
 
-
-.Sign{
+.Sign {
     position: relative;
     width: 500px;
     height: 100%;
     background-color: black;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     float: right;
 }
 
-.signHead{
-    position:relative;
+.signHead {
+    position: relative;
     height: 100px;
     width: 100%;
     color: white;
     text-align: center;
     font-size: 40px;
     line-height: 250%;
+    font-family:cursive;
 }
 
-.signInput{
+.signInput {
     position: relative;
     height: 200px;
     width: 100%;
@@ -51,106 +51,113 @@
     text-align: center;
 }
 
-
-.signForm{
+.signForm {
     position: relative;
-    top:10px;
 }
 
-.signForm>input{
+.signForm > input {
     position: relative;
-    margin-top:30px;
-    height: 30px;
+    margin-top: 30px;
+    height: 35px;
     width: 60%;
+    border:0;
     border-radius: 5px;
     font-size: 15px;
     ime-mode: disabled;
+    outline:none;
+    text-indent: 10px;
 }
 
-
-#identifyingCodeInput{
+#identifyingCodeInput {
     position: absolute;
     left: 100px;
-    width: 70px;
+    width: 100px;
 }
 
-.identifyingCodeImg{
+.identifyingCodeImg {
+
     position: relative;
-    margin-top:40px;
-    left: 200px;
+    margin-top: 31px;
+    left: 331px;
+    /* margin-right: 0; */
     width: 70px;
     height: 35px;
-    background-color: #00A000;
+    background-color: #fff;
 }
-.identifyingCodeImg>img{
+
+.identifyingCodeImg > img {
     width: 100%;
     height: 35px;
 }
 
-.signEnd{
+.signEnd {
     position: relative;
     height: 100px;
     line-height: 100px;
+    width: 100%;
 }
 
-#signBtn{
+#signBtn {
     position: relative;
     left: 100px;
     width: 100px;
     height: 40px;
-    cursor:pointer;
+    cursor: pointer;
+    border:0;
     border-radius: 5px;
     color: white;
     background-color: #00CCFF;
 }
 
-
-.signEnd>a{
+.signEnd > a {
     position: relative;
     margin-left: 140px;
-    color:white;
+    color: white;
     line-height: 20px;
 }
 
-
-.SignQRCode{
+.SignQRCode {
     position: relative;
     width: 500px;
     height: 100%;
     background-color: black;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     float: left;
 }
 
-.QRCodeDiv{
+.QRCodeDiv {
     position: relative;
-    top:50px;
-    left:0;
+    top: 50px;
+    left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    width: 50%;
+    width: 40%;
     height: 50%;
+
     background-color: #00A000;
 }
 
-.QRCodeDiv>img{
+.QRCodeDiv > img {
+    border-radius: 50%;
     width: 100%;
+    height: 100%;
 }
 
-.SignQRCodeHead{
-    position:relative;
+.SignQRCodeHead {
+    position: relative;
     height: 50px;
     width: 100%;
     color: white;
     text-align: center;
     font-size: 40px;
     line-height: 250%;
+    font-family: cursive;
 }
 
 /*框架CSS*/
 
-.bodyHtmlFrame{
+.bodyHtmlFrame {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -158,20 +165,21 @@
     height: 100%;
     min-width: 1000px;
     min-height: 600px;
-    background-image: url("../img/steamBC.jpg");
+    background-image: url("../img/bj1.jpg");
     background-size: cover;
 }
 
-.frameNav{
+.frameNav {
     position: absolute;
     width: 100%;
     height: 60px;
     right: 0;
-    background-color: #cccccc;
     z-index: 1;
+    background-image: url("../img/titile.png");
+    background-size: contain;
 }
 
-.person{
+.person {
     height: 60px;
     width: 60px;
     border-radius: 60px;
@@ -183,7 +191,7 @@
     margin-right: 5px;
 }
 
-.person:hover{
+.person:hover {
     height: 60px;
     width: 60px;
     border-radius: 60px;
@@ -194,24 +202,25 @@
     text-align: center;
     color: lightskyblue;
     margin-right: 5px;
-    cursor:pointer;
-    border-right-color:#f6f9fa;
+    cursor: pointer;
+    border-right-color: #f6f9fa;
     border-width: 1px;
     box-shadow: 0 0 10px #888888;
 }
 
-.personNav{
-    top:60px;
+.personNav {
+    top: 60px;
     position: absolute;
     height: auto;
-    width:160px;
+    width: 160px;
     float: right;
     right: 0;
     line-height: 350%;
     display: none;
+    box-shadow: -5px 10px 5px #888888;
 }
 
-.personChoice{
+.personChoice {
     height: 30px;
     width: 160px;
     background-color: white;
@@ -223,7 +232,7 @@
     font-size: 13px;
 }
 
-.personChoice:hover{
+.personChoice:hover {
     height: 30px;
     width: 160px;
     background-color: #e2e2e2;
@@ -231,14 +240,13 @@
     right: 0;
     text-align: center;
     color: lightskyblue;
-    cursor:pointer;
+    cursor: pointer;
     border-right-color: #00CCFF;
     border-width: 1px;
     box-shadow: 0 0 1px #888888;
 }
 
-
-.bodyDiv{
+.bodyDiv {
     top: 60px;
     position: absolute;
     width: 100%;
@@ -259,12 +267,12 @@
 
 /*个人信息页面*/
 
-.personMessage{
+.personMessage {
     position: absolute;
     width: 90%;
     height: 90%;
     background-color: white;
-    top:0;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
@@ -273,7 +281,7 @@
     display: none;
 }
 
-.personMessage>form{
+.personMessage > form {
     position: relative;
     width: 50%;
     float: right;
@@ -282,60 +290,60 @@
     left: 30px;
 }
 
-.personMessageTitle{
+.personMessageTitle {
     width: 100%;
     height: 15%;
     border-bottom: 1px solid #ddd;
 }
 
 /*.personMessage>span{*/
-    /*float: left;*/
-    /*margin: 0;*/
-    /*background-color: #00A000;*/
+/*float: left;*/
+/*margin: 0;*/
+/*background-color: #00A000;*/
 /*}*/
 
 /*.personMessage>span>h1{*/
-    /*position: relative;*/
-    /*margin: 0;*/
-    /*color: #3fa6d7;*/
+/*position: relative;*/
+/*margin: 0;*/
+/*color: #3fa6d7;*/
 /*}*/
-.span-titA{
+.span-titA {
     float: left;
     height: 50%;
-    width: 3px;
+    width: 0.5%;
     background-color: #3fa6d7;
-    margin-top: 18px;
-    margin-right: 10px;
-    margin-left: 20px;
+    margin-top: 3%;
+    margin-right: 2%;
+    margin-left: 3%;
 }
 
-.span-titB{
+.span-titB {
     float: left;
-    margin-top: 20px;
+    margin-top: 3%;
 
     font-size: 25px;
     color: #3fa6d7;
 }
 
-
-.personMessageBody{
+.personMessageBody {
     width: 100%;
     height: 85%;
     line-height: 30px;
 }
 
-.personMessageLeft{
+.personMessageLeft {
     position: relative;
     top: 20px;
     width: 50%;
     float: left;
 }
-.personMessageLeft>div{
+
+.personMessageLeft > div {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.personMessageLeft>div>p{
+.personMessageLeft > div > p {
     width: 80px;
     text-align: right;
     float: left;
@@ -343,24 +351,26 @@
     margin-bottom: 0;
     margin-right: 20px;
 }
-.personMessageLeft>div>input{
+
+.personMessageLeft > div > input {
     height: 20px;
     border: 1px solid #ddd;
     width: 65%;
 }
 
-.personMessageRight{
+.personMessageRight {
     position: relative;
     top: 20px;
     width: 50%;
     float: left;
 }
-.personMessageRight>div{
+
+.personMessageRight > div {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.personMessageRight>div>p{
+.personMessageRight > div > p {
     width: 80px;
     text-align: right;
     float: left;
@@ -368,15 +378,14 @@
     margin-bottom: 0;
     margin-right: 20px;
 }
-.personMessageRight>div>input{
+
+.personMessageRight > div > input {
     height: 20px;
     border: 1px solid #ddd;
     width: 65%;
 }
 
-
-
-.personMessage>button{
+.personMessage > button {
     position: absolute;
     top: 85%;
     bottom: 0;
@@ -388,33 +397,33 @@
     height: 30px;
     color: #FFFFFF;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.messageBody{
+.messageBody {
     position: relative;
     min-width: 750px;
     width: 70%;
     height: 100%;
     background-color: white;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     top: 5%;
 }
 
-.toolNav{
+.toolNav {
     position: relative;
-    width: 8%;
+    width: 9%;
     height: auto;
     background-color: white;
-    top:15%;
+    top: 15%;
     float: left;
     left: 3%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
-.toolChild{
+.toolChild {
     position: relative;
     width: 100%;
     height: 50px;
@@ -422,19 +431,20 @@
     border-color: #00a7e4;
     line-height: 300%;
     text-align: center;
-    cursor:pointer;
-}
-.toolChild:hover{
-   background-color: #00a1d6;
-    color: #f7fcfd  ;
+    cursor: pointer;
 }
 
-.choiceBody{
+.toolChild:hover {
+    background-color: #00a1d6;
+    color: #f7fcfd;
+}
+
+.choiceBody {
     position: absolute;
     width: 90%;
     height: 90%;
     background-color: white;
-    top:0;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
@@ -445,65 +455,64 @@
 
 /*添加员工*/
 
-.addUserTitle{
+.addUserTitle {
     height: 15%;
     background-color: #00A000;
 }
 
-.cancelAddUserBtn{
+.cancelAddUserBtn {
     float: right;
-    margin-right: 20px;
-    margin-top: 25px;
-    width: 100px;
-    height: 30px;
+    margin-right: 3%;
+    margin-top: 3%;
+    width: 12%;
+    height: 47%;
 }
 
-.cancelAddUserBtn>button{
+.cancelAddUserBtn > button {
     width: 100%;
     height: 100%;
     background-color: #9d9d9d;
     color: #faf2cc;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.confirmAddUserBtn{
+.confirmAddUserBtn {
     float: right;
-    margin-right: 20px;
-    margin-top: 25px;
-    width: 100px;
-    height: 30px;
+    margin-right: 3%;
+    margin-top: 3%;
+    width: 12%;
+    height: 47%;
 
 }
 
-.confirmAddUserBtn>button{
+.confirmAddUserBtn > button {
     width: 100%;
     height: 100%;
     background-color: #5cb85c;
     color: #faf2cc;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.addUserBody{
+.addUserBody {
     width: 100%;
     height: 85%;
     line-height: 20px;
     padding-top: 20px;
 }
 
-.addUserInput{
+.addUserInput {
     width: 50%;
     margin-bottom: 20px;
     margin-left: 70px;
     background-image: url("../img/xiaoren.jpg");
-    background-size:auto 100% ;
+    background-size: auto 100%;
     background-repeat: no-repeat;
 
 }
 
-.addUserInput>p{
-
+.addUserInput > p {
     width: 100px;
     text-align: right;
     float: left;
@@ -512,12 +521,779 @@
     margin-right: 20px;
 }
 
-.addUserInput>input{
+.addUserInput > input {
     height: 20px;
     border: 1px solid #ddd;
     width: 50%;
 }
 
-.addUserInput>select>option{
+.addUserInput > select > option {
     text-align: center;
 }
+
+/*查询用户信息*/
+
+.queryUserInput {
+    float: right;
+    margin-right: 1%;
+    margin-top: 4%;
+    width: 63%;
+    height: 47%;
+}
+
+.queryUserInput > input {
+    float: right;
+    width: 28%;
+    margin-right: 2%;
+}
+
+.queryUserInput > button {
+    float: right;
+    margin-right: 1%;
+    margin-top: -1%;
+    height: 90%;
+    background-color: #3fa6d7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.queryUserBody {
+    width: 100%;
+    height: 85%;
+    line-height: 20px;
+    overflow: auto;
+}
+
+.userTable {
+
+    margin: 0 auto;
+    width: 100%;
+}
+
+.userTable > tbody > tr > td {
+    text-align: center;
+}
+
+.userMessageClass {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30%;
+    height: 60%;
+    min-width: 150px;
+    min-height: 440px;
+    z-index: 4;
+    background-color: white;
+    display: none;
+    border-radius: 5%;
+}
+
+.userMessageClassBtnDiv {
+    height: 7%;
+    width: 57%;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+}
+
+.userMessageClassBtnDiv > .button1 {
+    width: 36%;
+    float: left;
+    height: 90%;
+    background-color: #3fa6d7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.userMessageClassBtnDiv > .button2 {
+    width: 36%;
+    float: right;
+    height: 90%;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.userMessageClassBody {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    margin-top: 0;
+}
+
+.userMessageClassBody > ul {
+    margin-top: 0;
+}
+
+.userMessageClassBody > ul > li {
+    line-height: 200%;
+}
+
+.trr {
+    cursor: pointer;
+}
+
+.addTheaterBody {
+    width: 100%;
+    height: 85%;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.addTheaterLeft {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.addTheaterRight {
+    position: relative;
+    height: 97%;
+    width: 50%;
+    float: right;
+}
+
+.addTheaterInputDiv {
+    position: relative;
+    width: 100%;
+    margin-top: 11%;
+    height: 6%;
+}
+
+.addTheaterInputDiv > p {
+    position: relative;
+    float: left;
+    width: 30%;
+    font-size: 112%;
+    text-align: right;
+    margin-top: 0;
+    margin-right: 3%;
+}
+
+.addTheaterInputDiv > input {
+    position: relative;
+    float: left;
+    width: 65%;
+    font-size: 110%;
+    height: 90%;
+}
+
+.addTheaterInputDiv > select {
+    height: 117%;
+}
+
+/*查询影厅面板*/
+
+.queryTheaterBody {
+    width: 100%;
+    height: 85%;
+    line-height: 20px;
+    overflow: auto;
+}
+
+/*演出计划面板*/
+.queryGoodBody {
+    width: 100%;
+    height: 85%;
+    line-height: 20px;
+    overflow: auto;
+}
+
+.TheaterTable {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.TheaterTable > tbody > tr > td {
+    text-align: center;
+}
+
+.TheaterTable > tbody > tr:hover {
+    color: red;
+}
+
+.theaterMessageClass {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30%;
+    height: 60%;
+    min-width: 550px;
+    min-height: 440px;
+    z-index: 4;
+    background-color: white;
+    display: none;
+    border-radius: 5%;
+}
+
+.theaterMessageClassBody {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    margin-top: 0;
+}
+
+.trrTheater {
+    cursor: pointer;
+}
+
+/*查询电影*/
+
+.queryMovieBody {
+    width: 100%;
+    height: 85%;
+    line-height: 20px;
+    overflow: auto;
+}
+
+.movieDiv {
+    width: 20%;
+    height: 50%;
+    background-color: #00A000;
+    float: left;
+    margin-left: 4%;
+    margin-top: 3%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movieDiv > img {
+    width: 100%;
+    height: 100%;
+}
+
+.movieDiv > p {
+    position: relative;
+    margin: 0 auto;
+}
+
+.movieMessageClass {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30%;
+    height: 60%;
+    min-width: 550px;
+    min-height: 440px;
+    z-index: 4;
+    background-color: white;
+    display: none;
+    border-radius: 5%;
+}
+
+.movieMessageClassPlayBill {
+    position: relative;
+    float: left;
+    height: 45%;
+    width: 30%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+.movieMessageClassPlayBill>img{
+    width: 100%;
+    height: 100%;
+}
+
+.movieMessageProgrammeProfile {
+    position: relative;
+    float: right;
+    height: 45%;
+    width: 60%;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: 2px groove rgba(0, 0, 0, 0.53);
+}
+
+.movieMessage {
+    float: right;
+    height: 42%;
+    width: 95%;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: 2px groove rgba(0, 0, 0, 0.53);
+}
+
+.movieMessage>img{
+    width: 100%;
+    height: 100%;
+}
+
+.movieMessageBtn {
+    height: 10%;
+    position: relative;
+    width: 20%;
+    bottom: 0;
+    margin: 0 auto;
+    top: 2%
+}
+
+.selectMovie {
+    float: right;
+    right: 2%;
+    width: 16%;
+}
+
+/*添加电影*/
+.addMovieBody {
+    width: 100%;
+    height: 85%;
+    line-height: 20px;
+    overflow: auto;
+}
+
+.addMoviePicture {
+
+
+    position: absolute;
+    height: 53%;
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 2%;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.addMoviePicture>img{
+    width: 100%;
+    height: 100%;
+}
+
+.addMovieMessage {
+    position: relative;
+    float: right;
+    width: 66%;
+    height: 100%;
+    line-height: 130%;
+}
+
+.addMovieInput {
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    background-image: url("../img/xiaoren.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.addMovieInput > p {
+    width: 100px;
+    text-align: right;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.addMovieInput > input {
+    height: 20px;
+    border: 1px solid #ddd;
+    width: 50%;
+}
+
+.addMovieInputText {
+    margin-bottom: 20px;
+    margin-left: 70px;
+    width: 70%;
+    height: 50%;
+}
+
+.addMovieInputText > textarea {
+    height: 150%;
+}
+
+.addFile {
+    top: 100%;
+    position: absolute;
+    margin: auto 0;
+    width: 100%;
+    left: 20%;
+}
+
+/*剧院经理*/
+
+.TMToolChild {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #f6f9fa;
+    border-color: #00a7e4;
+    line-height: 300%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 18px 19px #888888;
+}
+
+.TMToolChild:hover {
+    background-color: #00a1d6;
+    color: #f7fcfd;
+}
+
+.TMToolChildNav {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #f8efc0;
+    border-color: #00a7e4;
+    line-height: 241%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 18px 19px #888888;
+}
+
+.TMToolChildNav:hover {
+    background-color: #f7ecb5;
+    color: #f7fcfd;
+}
+
+.theaterScreen{
+    position: relative;
+    width: 70%;
+    height: 5%;
+    background-color: #5e5e5e;
+    margin: auto;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    top: 1%;
+}
+
+.hiddenScroll{
+    width: 81%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.SeatBody{
+    width: 108%;
+    height: 93%;
+    margin-top: 1%;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+
+
+.explainTicket{
+    margin-top: 5%;
+    width: 108%;
+    height: 10%;
+    left: 12%;
+    position: relative;
+}
+
+.spanTicket{
+    width: 5%;
+    font-size: 1%;
+}
+.explainTicket>div{
+    width: 8%;
+    height: 53%;
+    float: left;
+    font-size: 1%;
+    line-height: 240%;
+}
+
+.explainTicket>div>img{
+    width: 57%;
+    height: 100%;
+    float: right;
+}
+
+.seatDiv{
+    position: relative;
+    width: 12%;
+    height: 13%;
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+    cursor: pointer;
+}
+
+.seatDiv>img{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+}
+
+.seatMessageIn{
+    width: 154%;
+    height: auto;
+    background-color: white;
+    top: 50%;
+    position: relative;
+    left: -8%;
+    display: none;
+    z-index: 4;
+}
+
+.seatMessage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10%;
+    height: 30%;
+    min-width: 200px;
+    min-height: 250px;
+    z-index: 4;
+    background-color: white;
+    display: none;
+    border-radius: 5%;
+}
+.seatMessageTitle>ul{
+    margin-top: 0;
+    line-height: 233%
+}
+
+.seatMessageTitle{
+    position: relative;
+    height: 80%;
+}
+.seatMessageBtn{
+    position: relative;
+    height: 20%;
+}
+
+.seatMessageBtnConfirm{
+    position: relative;
+    margin-right: 2%;
+    left: 20%;
+}
+
+.queryProgrammeInput {
+    float: right;
+    margin-right: 1%;
+    margin-top: 4%;
+    width: 70%;
+    height: 47%;
+}
+
+.queryProgrammeInput > input {
+    float: right;
+    width: 20%;
+    margin-right: 2%;
+}
+
+.queryProgrammeInput > button {
+    float: right;
+    margin-right: 1%;
+    margin-top: -1%;
+    height: 90%;
+    background-color: #3fa6d7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.queryProgrammeInput > select {
+    float: right;
+    width: 10%;
+    margin-right: 2%;
+}
+.queryProgrammeInput >span{
+    float: right;
+}
+
+
+/*选择面板*/
+.movieDivSell {
+
+    width: 20%;
+    height: 50%;
+    background-color: #00A000;
+    float: left;
+    margin-left: 4%;
+    margin-top: 8%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movieDivSell > img {
+    width: 100%;
+    height: 100%;
+}
+
+.movieDivSell > p {
+    position: relative;
+    margin: 0;
+}
+
+
+
+/*售票面板*/
+.sellTicketBody {
+    width: 100%;
+    height: 85%;
+    line-height: 20px;
+    overflow: auto;
+}
+
+.sellTicketLeft{
+    float: left;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+}
+.sellTicketRight{
+    float: right;
+    position: relative;
+    width: 75%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.programmeSell{
+    position: relative;
+    width: 82%;
+    height: 71%;
+    margin-top: 3%;
+    margin-left: 13%;
+}
+
+.programmeSell>img{
+    width: 100%;
+}
+
+
+.programmeSell>p{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.sellTicket {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0 0 10px 5px #0f0f0f;
+    display: block;
+}
+
+/*查询订单*/
+.queryOrderBody {
+    width: 100%;
+    height: 85%;
+    line-height: 20px;
+    overflow: auto;
+}
+
+
+/*细节改进*/
+.queryTheaterMessageUl{
+    line-height: 199%;
+}
+
+
+/*票的样式*/
+
+
+.ticketDiv{
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #928a7f;
+}
+
+.ticketTop{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid;
+}
+.ticketBottom{
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+.imgDiv{
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 100%;
+}
+
+.imgDiv>img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+.ticketTitle{
+    position: relative;
+    width: 280px;
+    height: 100%;
+    float: left;
+    font-family: cursive;
+    text-align: center;
+    font-size: 48px;
+    line-height: 2;
+}
+
+.ticketMessage{
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ticketMessageTheater{
+    width: 30%;
+    height: 100%;
+    border: 2px solid #515A3B;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 10px;
+    background-color: #AB9B9E;
+    float: left;
+}
+
+.ticketMessageTime{
+    width: 55%;
+    height: 100%;
+    border: 2px solid #515A3B;
+    border-radius: 6px;
+    margin-left: 7px;
+    background-color: #AB9B9E;
+    float: left;
+}
+
+.ticketMessageName{
+    width: 90%;
+    height: 100%;
+    border: 2px solid #515A3B;
+    border-radius: 5px;
+    margin-left: 9px;
+    background-color: #AB9B9E;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
